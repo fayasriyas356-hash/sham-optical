@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sham optical showroom</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #102a43;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #ffd166;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 500px;
+            padding: 70px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            background: linear-gradient(120deg, #e0f2fe, #fff7ed);
+        }
+
+        .hero-content {
+            max-width: 550px;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 5vw, 58px);
+            color: #102a43;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .hero img {
+            width: 42%;
+            max-width: 450px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f4a261;
+            color: #102a43;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #ffd166;
+        }
+
+        .section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 34px;
+            color: #102a43;
+            margin-bottom: 15px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px #00000010;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 18px 0 10px;
+            color: #102a43;
+        }
+
+        .price {
+            color: #e76f51;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 12px 0;
+        }
+
+        .offer {
+            background: #102a43;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .offer h2 {
+            font-size: 36px;
+            color: #ffd166;
+            margin-bottom: 15px;
+        }
+
+        .offer p {
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 55px 20px;
+            line-height: 2;
+        }
+
+        footer {
+            background: #102a43;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 45px 6%;
+            }
+
+            .hero img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>👓 Vision Plus</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>See the World in Style!</h1>
+
+            <p>
+                Discover premium eyeglasses, trendy sunglasses
+                and comfortable contact lenses at Vision Plus Optical
+                Showroom. Perfect vision, fashionable frames and
+                friendly service — all in one place!
+            </p>
+
+            <a href="#collections" class="btn">Explore Collections</a>
+        </div>
+
+        <img
+            src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=900&q=80"
+            alt="Stylish eyeglasses"
+        >
+    </section>
+
+    <section class="section" id="collections">
+        <h2>Our Latest Collections</h2>
+        <p>Find the perfect frames to match your personality.</p>
+
+        <div class="products">
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80"
+                    alt="Fashion sunglasses"
+                >
+                <h3>Stylish Sunglasses</h3>
+                <p>Fashion meets protection.</p>
+                <div class="price">Starting at ₹999</div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=600&q=80"
+                    alt="Eyeglass frames"
+                >
+                <h3>Premium Eyeglasses</h3>
+                <p>Comfortable frames for everyday use.</p>
+                <div class="price">Starting at ₹799</div>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=600&q=80"
+                    alt="Designer eyewear"
+                >
+                <h3>Designer Frames</h3>
+                <p>Upgrade your look with modern designs.</p>
+                <div class="price">Starting at ₹1,499</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="offer" id="offers">
+        <h2>🎉 Special Opening Offer!</h2>
+        <p>
+            Get 20% OFF on selected frames.<br>
+            Visit our showroom and discover your perfect look!
+        </p>
+        <a href="#contact" class="btn">Visit Us Today</a>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Visit Sham Optical</h2>
+        <p>📍 Address: Mulagumoodu SBI ATM Near Kanniyakumari District-629002</p>
+        <p>📞 Phone: 9677454629</p>
+        <p>🕒 Opening Hours: 9:30 AM – 9:00 PM</p>
+
+        <button class="btn" onclick="contactShowroom()">
+            Contact Showroom
+        </button>
+    </section>
+
+    <footer>
+        <p>© 2026 visit Sham opticalShowroom | All Rights Reserved</p>
+        <p>Look Better. See Better. Live Better.</p>
+    </footer>
+
+    <script>
+        function contactShowroom() {
+            alert(
+                "Welcome to Sham Optical Showroom! " +
+                "Please add your showroom phone number to enable direct contact."
+            );
+        }
+    </script>
+
+</body>
+</html>
